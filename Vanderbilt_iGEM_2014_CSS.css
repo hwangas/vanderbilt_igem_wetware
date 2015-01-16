@@ -55,14 +55,17 @@ table {
 
 #managers {
     border: 1em solid lightsteelblue;
+    width: 100%;
 }
 
 #silver {
     border: 1em solid silver;
+    width: 100%;
 }
 
 #bronze {
     border: 1em solid darkgoldenrod;
+    width: 100%;
 }
 
 .row_title {

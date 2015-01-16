@@ -74,93 +74,73 @@
             members.</footer>
     </div>
     <div id="right_page" class="page">
-        <table>
-            <tr>
-                <td><img class="page_img" src="VU_Ophir.jpg" alt="Ophir Ospovat"></td>
-                <td><img class="page_img" src="VU_Steven_zilberman.jpg" alt="Steven Zilberman"></td>
-                <td><img class="page_img" src="VU_Jarrod.jpg" alt="Jarrod Shilts"></td>
-            </tr>
-            <tr>
-                <td><img class="page_img" src="VU_Stephen_lee.jpg" alt="Stephen Lee"></td>
-                <td><img class="page_img" src="VU_Sam_budoff.jpg" alt="Sam Budoff"></td>
-                <td><img class="page_img" src="VU_Anderson_monken.jpg" alt="Anderson Monken"></td>
-            </tr>
-        </table>
-
-        <table id="managers" width="100%">
-            <tr>
-                <td class="row_title">Humelene Group</td>
-                <td class="row_title">Linalool(S) Group</td>
-                <td class="row_title">Myrcene Group</td>
-                <td class="row_title">Santalene Group</td>
-            </tr>
-            <tr>
-                <td>James Mansfield</td>
-                <td>Joshua Eggold</td>
-                <td>Anna Hwang</td>
-                <td>Tristan Abott</td>
-            </tr>
-        </table>
-
-        <table id="silver" width="100%">
-            <tr>
-                <td>Emily Crispi</td>
-                <td>William McAdams</td>
-                <td>Adarsh Kulkarni</td>
-                <td>Sean King</td>
-            </tr>
-            <tr>
-                <td>Kevin Humphrey</td>
-                <td>Bowen Yang</td>
-                <td>Clara Chu</td>
-                <td>Jiyeon Lee</td>
-            </tr>
-            <tr>
-                <td>Xavier Ryan</td>
-                <td>Jason Eggold</td>
-                <td>Emily Bishop</td>
-                <td>Courtney Mason</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>Tyler Keagle</td>
-                <td>Chaoqi Mu</td>
-                <td></td>
-            </tr>
-        </table>
-
-        <table id="bronze" width="100%">
-            <tr>
-                <td>Luqman Mahir</td>
-                <td>Brett Doliner</td>
-                <td>Shoman Kasbekar</td>
-                <td>Carter Portwood</td>
-            </tr>
-            <tr>
-                <td>Abhishek Jaddu</td>
-                <td>Shaquille Sparkman</td>
-                <td>Brent Huang</td>
-                <td>Musbah Shaheen</td>
-            </tr>
-            <tr>
-                <td>Thomas Airman</td>
-                <td>Melissa Whitehurst</td>
-                <td>Yawar Ali</td>
-                <td>Sean Sheldon</td>
-            </tr>
-            <tr>
-                <td>Alex Miner</td>
-                <td>Wesley Lin</td>
-                <td>Caroline Guan</td>
-                <td>Quinlan Hartigan</td>
-            </tr>
-        </table>
     </div>
 </div>
 
 
 <div id="left_button" class="button"></div>
 <div id="right_button" class="button"></div>
+
+<script src="SubPageBuilder.js"></script>
+<script src="page.js"></script>
+<script>
+    var builder = new SubPageBuilder();
+    var officers = document.createElement("table");
+
+    var row = officers.insertRow();
+    var str = row.insertCell(0);
+    str.appendChild(builder.createPhoto("VU_Ophir.jpg", "Ophir Ospovat", 150, 150, "Ophir Ospovat"));
+    str = row.insertCell(1);
+    str.appendChild(builder.createPhoto("VU_Steven_zilberman.jpg", "Steven Zilberman", 150, 150, "Steven Zilberman"));
+    str = row.insertCell(2);
+    str.appendChild(builder.createPhoto("VU_Jarrod.jpg", "Jarrod Shilts", 150, 150, "Jarrod Shilts"));
+
+    row = officers.insertRow();
+    str = row.insertCell(0);
+    str.appendChild(builder.createPhoto("VU_Stephen_lee.jpg", "Stephen Lee", 150, 150, "Stephen Lee"));
+    str = row.insertCell(1);
+    str.appendChild(builder.createPhoto("VU_Sam_budoff.jpg", "Sam Budoff", 150, 150, "Sam Budoff"));
+    str = row.insertCell(2);
+    str.appendChild(builder.createPhoto("VU_Anderson_monken.jpg", "Anderson Monken", 150, 150, "Anderson Monken"));
+
+
+    var managers = document.createElement("table");
+    managers.id = "managers";
+    var names = ["Humelene Group", "Linalool(S) Group", "Myrcene Group", "Santalene Group"];
+    builder.insertTextRow(managers, names);
+    names = ["James Mansfield", "Joshua Eggold", "Anna Hwang", "Tristan Abott"];
+    builder.insertTextRow(managers, names);
+
+    var silvers = document.createElement("table");
+    silvers.id = "silver";
+    names = [["Emily Crispi", "William McAdams", "Adarsh Kulkarni", "Sean King"],
+        ["Kevin Humphrey", "Bowen Yang", "Clara Chu", "Jiyeon Lee"],
+        ["Xavier Ryan", "Jason Eggold", "Emily Bishop", "Courtney Mason"],
+        ["", "Tyler Keagle", "Chaoqi Mu", ""]];
+
+    builder.insertTextRow(silvers, names[0]);
+    builder.insertTextRow(silvers, names[1]);
+    builder.insertTextRow(silvers, names[2]);
+    builder.insertTextRow(silvers, names[3]);
+
+    var bronzes = document.createElement("table");
+    bronzes.id = "bronze";
+    names = [["Luqman Mahir", "Brett Doliner", "Shoman Kasbekar", "Carter Portwood"],
+        ["Abhishek Jaddu", "Shaquille Sparkman", "Brent Huang", "Musbah Shaheen"],
+        ["Thomas Airman", "Melissa Whitehurst", "Yawar Ali", "Sean Sheldon"],
+        ["Alex Miner", "Wesley Lin", "Caroline Guan", "Quinlan Hartigan"],
+        ["", "Rachel Kim", "Alison Zhong", ""]];
+
+    builder.insertTextRow(bronzes, names[0]);
+    builder.insertTextRow(bronzes, names[1]);
+    builder.insertTextRow(bronzes, names[2]);
+    builder.insertTextRow(bronzes, names[3]);
+
+    document.getElementById("right_page").appendChild(officers);
+    document.getElementById("right_page").appendChild(managers);
+    document.getElementById("right_page").appendChild(silvers);
+    document.getElementById("right_page").appendChild(bronzes);
+</script>
 
 
 </body>
