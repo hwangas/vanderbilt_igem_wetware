@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="Vanderbilt_iGEM_2014_CSS.css">
+    <script src="home.js"></script>
+
+    <style>
+        .tab_left {
+            visibility: hidden;
+        }
+        .tab_right {
+            visibility: visible;
+        }
+        #home_tab_left {
+            visibility: visible;
+        }
+
+        #home_tab_right {
+            visibility: hidden;
+        }
+        #vial {
+            float: right;
+            margin-left: 1%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<header id="igem_header">
+    stuff stuff stuff stuff stuff stuff stuff stuff
+</header>
+
+<div id="tabs">
+    <a href="home.html">            <div id="home_tab_left" class = "tab_left"></div>           </a>
+    <a href="team.html">            <div id="team_tab_left" class = "tab_left"></div>           </a>
+    <a href="project.html">         <div id="project_tab_left" class = "tab_left"></div>        </a>
+    <a href="parts.html">           <div id="parts_tab_left" class = "tab_left"></div>          </a>
+    <a href="notebook.html">        <div id="notebook_tab_left" class = "tab_left"></div>       </a>
+    <a href="safety.html">          <div id="safety_tab_left" class = "tab_left"></div>         </a>
+    <a href="attributions.html">    <div id="attributions_tab_left" class = "tab_left"></div>   </a>
+
+    <a href="home.html">            <div id="home_tab_right" class = "tab_right"></div>         </a>
+    <a href="team.html">            <div id="team_tab_right" class = "tab_right"></div>         </a>
+    <a href="project.html">         <div id="project_tab_right" class = "tab_right"></div>      </a>
+    <a href="parts.html">           <div id="parts_tab_right" class = "tab_right"></div>        </a>
+    <a href="notebook.html">        <div id="notebook_tab_right" class = "tab_right"></div>     </a>
+    <a href="safety.html">          <div id="safety_tab_right" class = "tab_right"></div>       </a>
+    <a href="attributions.html">    <div id="attributions_tab_right" class = "tab_right"></div> </a>
+</div>
+
+<div id="openLabBook">
+    <div id="left_page" class="page">
+        <header>Our Idea</header>
+        <p>Long before the advent of modern science, it was recognized that certain plants are
+            capable of producing compounds of immense value.</p>
+        <img id="vial" class="var_page_img" src="Oils_vial_design.jpg" alt="Oils in a vial" width="297" height="244" >
+        <p>From a single class of molecule, the terpenoids, come properties including agents with therapeutic
+            qualities against maladies ranging from cancer to infection, antimicrobials, natural pesticides,
+            rich flavorants, and fragrant scents.</p>
+        <p>However, the utilization of these remarkable compounds has been severely hindered by their rarity
+            in nature: many are found in only a small number of species and produced at levels measured in
+            parts per million2. Synthetic biology offers an opportunity to resolve this problem, by applying
+            metabolic engineering in order to create cellular factories. Our project seeks to use the ideas of
+            synthetic biology to develop a commercially viable strategy for the efficient production of a wide
+            range of terpenoids.</p>
+        <footer>1. Aharoni A, Jongsma MA, Bouwmeester HJ. Volatile science? Metabolic engineering of terpenoids in
+            plants. Trends Plant Science 2005;10(12):594-602.</footer>
+        <footer>2. Ajikumar PK, Tyo K, Carlsen S, Mucha O, Phon TH, Stephanopoulos G. Terpenoids: opportunities
+            forbiosynthesis of natural product drugs using engineered microorganisms. Molecular Pharmaceutics
+            2008;5(2):167-90.</footer>
+
+    </div>
+    <div id="right_page" class="page">
+        <header>Our Approach</header>
+        <p>We believe that common brewer's yeast, or Saccharomyces cerevisiae, is an excellent platform for
+            engineering terpenoid biosynthetic pathways.</p>
+        <p>The mevalonic acid pathway endogenous to yeast produces the key isoprenoid intermediates that are the
+            precursors to virtually all terpenoid biosynthesis<sup>3</sup>.</p>
+        <p>Genes encoding plant synthases can then be recombinantly expressed in yeast cells, which then take that
+            isoprenoid substrate and convert it through one or more steps
+            into the final terpenoid product.</p>
+        <p>A specially designed biobrick shuttle vector developed by our team should make the process convenient and
+            reliable, by allowing us to first amplify plasmids containing
+            our gene of interest in E. coli and permitting the integration of synthase genes directly into the yeast
+            genome through homologous recombination.</p>
+        <p>A carefully-refined protocol is expected to further improve product yield, by extracting genetic sequences
+            directly from plant genomic DNA and mating cells to form diploid transformants.</p>
+        <p>Combined, our approach promises to be an effective manufacturing platform for these precious
+            (and sweet-smelling) compounds.</p>
+        <footer>3. Farhi M, Marhevka E, Masci T, Marcos E, Eyal Y, Ovadis M, Abeliovich H, Vainstein A. Harnessing
+            yeast subcellular compartments for the production of plant terpenoids. Metabolic Engineering
+            2011;13(5):474-81.</footer>
+    </div>
+</div>
+
+<div id="left_button" class="button"></div>
+<div id="right_button" class="button"></div>
+
+</body>
+
+</html>

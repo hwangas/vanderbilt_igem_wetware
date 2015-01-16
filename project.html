@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>The Project</title>
+    <link rel="stylesheet" type="text/css" href="Vanderbilt_iGEM_2014_CSS.css">
+    <style>
+        .tab_left {
+            visibility: hidden;
+        }
+        .tab_right {
+            visibility: visible;
+        }
+        #home_tab_left {
+            visibility: visible;
+        }
+        #team_tab_left {
+            visibility: visible;
+        }
+        #project_tab_left {
+            visibility: visible;
+        }
+        #home_tab_right {
+            visibility: hidden;
+        }
+        #team_tab_right {
+            visibility: hidden;
+        }
+        #project_tab_right {
+            visibility: hidden;
+        }
+
+        #right_button {
+            visibility: visible;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<header id="igem_header">
+    stuff stuff stuff stuff stuff stuff stuff stuff
+</header>
+
+<div id="tabs">
+    <a href="home.html">            <div id="home_tab_left" class = "tab_left"></div>           </a>
+    <a href="team.html">            <div id="team_tab_left" class = "tab_left"></div>           </a>
+    <a href="project.html">         <div id="project_tab_left" class = "tab_left"></div>        </a>
+    <a href="parts.html">           <div id="parts_tab_left" class = "tab_left"></div>          </a>
+    <a href="notebook.html">        <div id="notebook_tab_left" class = "tab_left"></div>       </a>
+    <a href="safety.html">          <div id="safety_tab_left" class = "tab_left"></div>         </a>
+    <a href="attributions.html">    <div id="attributions_tab_left" class = "tab_left"></div>   </a>
+
+    <a href="home.html">            <div id="home_tab_right" class = "tab_right"></div>         </a>
+    <a href="team.html">            <div id="team_tab_right" class = "tab_right"></div>         </a>
+    <a href="project.html">         <div id="project_tab_right" class = "tab_right"></div>      </a>
+    <a href="parts.html">           <div id="parts_tab_right" class = "tab_right"></div>        </a>
+    <a href="notebook.html">        <div id="notebook_tab_right" class = "tab_right"></div>     </a>
+    <a href="safety.html">          <div id="safety_tab_right" class = "tab_right"></div>       </a>
+    <a href="attributions.html">    <div id="attributions_tab_right" class = "tab_right"></div> </a>
+</div>
+
+<div id="openLabBook">
+    <div id="left_page" class="page"></div>
+    <div id="right_page" class="page"></div>
+</div>
+
+<div id="left_button" class="button"></div>
+<div id="right_button" class="button"></div>
+<!-- <script src="project.js"></script> -->
+<script>
+    var thisPageNum = 3;
+</script>
+<script src="SubPageBuilder.js"></script>
+<script src="page.js"></script>
+
+
+</body>
+
+</html>
