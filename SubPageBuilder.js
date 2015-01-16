@@ -1280,32 +1280,35 @@ function AttributionsSubPageBuilder() {
         var img1 = subPage.createPhoto("VU_Chrissy_marasco.JPG",
             "Chrissy Marasco",
             300, 300,
-            "Dr. Chrissy Marasco");
+            "Dr. Chrissy Marasco for her role as the team's principle faculty adviser, with " +
+            "contributions to both the administrative and scientific work of our team");
 
         var img2 = subPage.createPhoto("VU_Kevin_seale.jpg",
             "Kevin Seale",
             300, 300,
-            "Kevin Seale");
+            "Kevin Seale for his role as our team's administrative adviser, providing lab " +
+            "space and equipment, and offering assistance through the SyBBURE program");
 
         var img3 = subPage.createPhoto("VU_Kathy_friedman.jpg",
             "Kathy Friedman",
             300, 300,
-            "Kathy Friedman");
+            "Kathy Friedman for her role as our team's scientific adviser, offering technical" +
+            " assistance during project planing and troubleshooting");
 
         var img4 = subPage.createPhoto("VU_Ian_macara.jpg",
             "Ian Macara",
             300, 300,
-            "Ian Macara");
+            "Ian Macara for providing our team with lab space, materials, and equipment for the fall semester and beyond");
 
         var img5 = subPage.createPhoto("VU_Mark_woelfle.jpg",
             "Mark Woelfle",
             300, 300,
-            "Mark Woelfle");
+            "Mark Woelfle for providing our team with lab space and equipment for the spring semester");
 
         var img6 = subPage.createPhoto("VU_Amanda_benson.jpg",
             "Amanda Benson",
             300, 300,
-            "Amanda Benson");
+            "Amanda Benson for her technical support and guiding collaboration with Ravenwood High School's iGEM team");
 
         rightPageBuilder.appendChild(header);
         rightPageBuilder.appendChild(img1);
@@ -1322,12 +1325,13 @@ function AttributionsSubPageBuilder() {
         var img1 = subPage.createPhoto("VU_Greenhouse_ertelt.jpg",
             "Vanderbilt Greenhouse and Jonathan Ertelt",
             300, 300,
-            "VU Greenhouse and Jonathan Ertelt");
+            "VU Greenhouse and Jonathan Ertelt for assistance growing and maintaining our various plants");
 
         var img2 = subPage.createPhoto("VU_mass_spec.jpg",
             "Mass Spec at Vanderbilt Mass Spectrometry Core",
             300, 300,
-            "Vanderbilt Mass Spectrometry Core");
+            "Vanderbilt Mass Spectrometry Core for agreeing to analyze our samples for terpenoid content and " +
+            "discussing ways to extract terpene for analysis");
 
         var text = "Dr. Steven Baskauf for general assistance in running our lab.";
         var p1 = subPage.createP(text);
